@@ -20,7 +20,7 @@
     }
 
     .bg-color{
-        color: #00303C
+        background-color: #F4F7FF;
     }
 
     </style>
@@ -34,6 +34,7 @@
             <div class="flex items-center gap-3">
                 <img src="assets/logo.png" alt="">
                 <h1 class="poppins  text-4xl"><span class="font-light">Dev</span><span class="font-bold">Board</span></h1>
+                
             </div>
 
             <div class="flex gap-9">
@@ -47,6 +48,44 @@
            
         </div>
     </nav>
+
+    <!-- job task box  -->
+    <section>
+        <div>
+            <div class="flex">
+                <div class="flex items-center gap-5 bg-color w-[263px] px-8 py-6">
+                    <img class="rounded-full p-2 bg-white" src="assets/checkbox.png" alt="">
+                    <div>
+                        <p class="font-medium text-base poppins">Task Assigned </p>
+                        <h2 class="font-bold text-3xl poppins">05</h2>
+                    </div>
+                </div>
+
+                <div class="flex items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] w-[524px] px-8 py-6">
+                    <img src="assets/board.png" alt="">
+                    <h2>Discover Something <br> New Today!</h2>
+                </div>
+
+                <div class="flex items-center gap-5 bg-color w-[263px] px-8 py-6">
+                    <img class="rounded-full p-2 bg-white" src="assets/calender.png" alt="">
+                    <div>
+                        <p id="currentday" class="font-medium text-base poppins"></p>
+                        <h2 id="currentdate" class="font-bold text-3xl poppins">Jul 28 2025 </h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+
+        <div>
+
+        </div>
+    </section>
     
+    <script src="date.js"></script>
 </body>
 </html>
