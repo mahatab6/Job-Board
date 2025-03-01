@@ -6,6 +6,7 @@ for (let i = 0; i < mobileBtns.length; i++) {
         mobileBtns[i].disabled = true; 
         mobileBtns[i].style.backgroundColor = "gray";
 
+
         let finishTaskElement = document.getElementById("finish-task");
         let finishedCount = parseInt(finishTaskElement.innerText);
         finishedCount -= 1;
@@ -17,6 +18,7 @@ for (let i = 0; i < mobileBtns.length; i++) {
         doneTaskElement.innerText = workDoneCount;
 
 
+        // let newTitle = document.getElementsByClassName("title").innerText;
         let now = new Date();
         let timeString = now.toLocaleTimeString();
         let history = document.getElementById("history-list");
@@ -31,6 +33,12 @@ for (let i = 0; i < mobileBtns.length; i++) {
         
     });
 }
+
+document.getElementById("switchblog").style.cursor = 'pointer';
+document.getElementById("switchblog").addEventListener("click",function(){
+    window.location.href="blog.html";
+    
+})
 
 
 
